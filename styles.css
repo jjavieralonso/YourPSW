@@ -37,6 +37,7 @@ a {
 
 h1 {
     text-align: center;
+    text-decoration: underline;
 }
 
 #password-container {

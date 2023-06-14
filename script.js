@@ -75,3 +75,14 @@ window.addEventListener("DOMContentLoaded", function () { //verifica como es el 
         document.getElementById("alternarTema").textContent = "Modo oscuro";
     }
 });
+
+function validateLength() { //validar que en el input haya un valor permitido en el input.
+    var lengthInput = document.getElementById("length");
+    var length = parseInt(lengthInput.value);
+
+    if (length < 10) {
+        lengthInput.value = 10;
+    } else if (length > 32) {
+        lengthInput.value = 32;
+    }
+}
